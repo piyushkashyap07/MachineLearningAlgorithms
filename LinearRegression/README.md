@@ -24,11 +24,6 @@ def generate_data(n=100):
 def hypothesis(X, theta):
     return X.dot(theta)
 ```
-✅ **Explanation:**
-- This function returns **predicted y** using the formula:
-  
-  \[ y_{pred} = X \cdot \theta \]
-
 ---
 ## **3️⃣ Define Loss Function (Mean Squared Error)**
 ```python
@@ -37,11 +32,6 @@ def compute_loss(X, y, theta):
     predictions = hypothesis(X, theta)
     return (1 / (2 * m)) * np.sum((predictions - y) ** 2)
 ```
-✅ **Explanation:**
-- Measures how far predictions are from actual values.
-- Uses **Mean Squared Error (MSE)** formula:
-
-  \[ \text{Loss} = \frac{1}{2m} \sum (y_{pred} - y)^2 \]
 
 ---
 ## **4️⃣ Implement Gradient Descent**
@@ -57,15 +47,6 @@ def gradient_descent(X, y, theta, learning_rate=0.1, epochs=1000):
     
     return theta, loss_history
 ```
-✅ **Explanation:**
-- **Updates `theta` step by step** to minimize the loss.
-- The key formula:
-  
-  \[ \theta = \theta - \alpha \times \text{gradient} \]
-  
-  where:
-  - **α (learning_rate)** controls step size.
-  - **Gradient** tells how `theta` should change.
 
 ---
 ## **5️⃣ Train the Model**
