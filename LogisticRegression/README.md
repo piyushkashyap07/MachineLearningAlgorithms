@@ -12,22 +12,22 @@ In this project, we implement **Logistic Regression from scratch** using NumPy.
 ### 1️⃣ **Hypothesis Function (Sigmoid Function)**
 Logistic Regression uses the **sigmoid function** to map any real-valued number into a range between **0 and 1**.
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### 2️⃣ **Cost Function (Binary Cross-Entropy Loss)**
 Since Logistic Regression predicts probabilities, we use the **log loss** (binary cross-entropy) as our cost function:
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ### 3️⃣ **Gradient Descent Optimization**
 To minimize the cost function, we use **gradient descent** to update the weights \( w \) and bias \( b \):
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ### 4️⃣ **Decision Rule**
 After training, we use the model to make predictions:
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 This means if the probability of class **1** is at least **0.5**, we classify it as **1**, otherwise, it's **0**.
 
 ---
